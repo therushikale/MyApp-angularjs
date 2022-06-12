@@ -1,0 +1,18 @@
+label {
+    font-weight: 600;
+    color:white;
+}
+body {
+  background:white;
+}
+.jumbotron{
+    background-color: black;
+}
+.btn{
+    margin: 10px;
+    background-color:indigo;
+}
+#cancel{
+    color:black;
+    background-color: white;
+}

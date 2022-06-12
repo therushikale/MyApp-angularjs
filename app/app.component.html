@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
+    <link rel="stylesheet" type="text/css" href="https://codepen.io/skjha5993/pen/bXqWpR.css">
+</head>
+<body>
+
+    <div class="container">
+        <form>
+            <h2 class="text-center">Allianz Exports</h2>
+        <div class="row jumbotron">
+            <div class="col-sm-6 form-group">
+                <label for="name-f">Strategy Name</label>
+                <input type="text" class="form-control" name="fname" id="name-f" placeholder="John Doe" required>
+            </div>
+            <div class="col-sm-3 form-group">
+              <label for="Date">Entry Time*</label>
+              <input type="time" name="time" class="form-control" id="Time" placeholder="hh:mm" required>
+          </div>
+          <div class="col-sm-3 form-group">
+            <label for="Date">Exit Time*</label>
+            <input type="time" name="time" class="form-control" id="Time" placeholder="hh:mm" required>
+           </div>
+           <div class="col-sm-3 form-group">
+            <label for="Direction">Direction</label>
+            <select id="Direction" class="form-control browser-default custom-select">
+            <option value="Up">Up</option>
+            <option value="Down">Down</option>
+            <option value="Left">Left</option>
+            <option value="Right">Right</option>
+            </select>
+           </div>
+           <div class="col-sm-3 form-group">
+            <label for="Timeframe">Timeframe</label>
+            <select id="Timeframe" class="form-control browser-default custom-select">
+            <option value="Day">Day</option>
+            <option value="Week">Week</option>
+            <option value="Month">Month</option>
+            </select>
+           </div>
+           <!-- woodwinds, brass, percussion, and strings. -->
+
+           <div class="col-sm-3 form-group">
+            <label for="Instrument">Instrument(for analysis)</label>
+            <select id="Instrument" class="form-control browser-default custom-select">
+            <option value="Woodwinds">Woodwinds</option>
+            <option value="Brass">Brass</option>
+            <option value="Percussion">Percussion</option>
+            <option value="Strings">Strings</option>
+            </select>
+           </div>
+           <div class="col-sm-3 form-group">
+            <label for="Symbol">Symbol to Trade</label>
+            <select id="Symbol" class="form-control browser-default custom-select">
+            <option value="Symbol1">Symbol1</option>
+            <option value="Symbol2">Symbol2</option>
+            <option value="Symbol3">Symbol3</option>
+            </select>
+           </div>
+           <div class="col-sm-3 form-group">
+            <label for="Indicator">Indicator 1</label>
+            <select id="Indicator" class="form-control browser-default custom-select">
+            <option value="Indicator1">Indicator1</option>
+            <option value="Indicator2">Indicator2</option>
+            <option value="Indicator3">Indicator3</option>
+            </select>
+           </div>
+            <div class="col-sm-3 form-group">
+                <label for="Period_1">Period 1</label>
+                <input type="number" name="Period_1" class="form-control" id="Period_1" placeholder="14" required>
+            </div>
+            <div class="col-sm-3 form-group">
+              <label for="Multiplier_1">Multiplier 1</label>
+              <input type="number" name="Multiplier_1" class="form-control" id="Multiplier_1" placeholder="0" required>
+          </div>
+          <div class="col-sm-3 form-group">
+            <label for="Candle_param">Candle param 1</label>
+            <select id="Candle_param" class="form-control browser-default custom-select">
+            <option value="close">close</option>
+            <option value="open">open</option>
+            </select>
+           </div>
+           <div class="col-sm-3 form-group">
+            <label for="Indicator">Indicator 2  </label>
+            <select id="Indicator" class="form-control browser-default custom-select">
+            <option value="Indicator2">Indicator2</option>
+            <option value="Indicator3">Indicator3</option>
+            <option value="Indicator4">Indicator4</option>
+            </select>
+           </div>
+            <div class="col-sm-3 form-group">
+                <label for="Period_2">Period 2</label>
+                <input type="number" name="Period_2" class="form-control" id="Period_2" placeholder="14" required>
+            </div>
+            <div class="col-sm-3 form-group">
+              <label for="Multiplier_2">Multiplier 2</label>
+              <input type="number" name="Multiplier_2" class="form-control" id="Multiplier_2" placeholder="0" required>
+          </div>
+          <div class="col-sm-3 form-group">
+            <label for="Candle_param2">Candle param 2</label>
+            <select id="Candle_param2" class="form-control browser-default custom-select">
+            <option value="close">close</option>
+            <option value="open">open</option>
+            </select>
+           </div>            
+           <div class="col-sm-3 form-group">
+            <label for="Indicator">Condition</label>
+            <select id="Indicator" class="form-control browser-default custom-select">
+            <option value="condition1">condition1</option>
+            <option value="condition2">condition2</option>
+            <option value="condition3">condition3</option>
+            </select>
+           </div>
+           <div class="col-sm-3 form-group">
+            <label for="Indicator">Order Type </label>
+            <select id="Indicator" class="form-control browser-default custom-select">
+            <option value="order1">order1</option>
+            <option value="order2">order2</option>
+            <option value="order3">order3</option>
+            </select>
+           </div>
+            <div class="col-sm-3 form-group">
+              <label for="Target">Target</label>
+              <input type="number" name="Target" class="form-control" id="Target" placeholder="0" required>
+          </div>
+          <div class="col-sm-3 form-group">
+            <label for="Target_unit">Target unit</label>
+            <select id="Target_unit" class="form-control browser-default custom-select">
+            <option value="unit1">unit1</option>
+            <option value="unit2">unit2</option>
+            </select>
+           </div>  
+            <div class="col-sm-3 form-group">
+              <label for="stoploss">Stoploss</label>
+              <input type="number" name="stoploss" class="form-control" id="stoploss" placeholder="0" required>
+            </div>
+            <div class="col-sm-3 form-group">
+              <label for="stoploss_unit">Stoploss unit</label>
+              <select id="stoploss_unit" class="form-control browser-default custom-select">
+              <option value="sunit1">unit1</option>
+              <option value="sunit2">unit2</option>
+              </select>
+             </div>  
+             <div class="col-sm-3 form-group">
+              <label for="quantity">Quantity</label>
+              <input type="number" name="quantity" class="form-control" id="quantity" placeholder="0" required>
+            </div>
+            <div>
+              <div class="col-sm-12 form-group mb-0">
+                <button class="btn btn-primary float-right" id ="Accept">Accept</button>
+             </div>
+            <div class="col-sm-12 form-group mb-0">
+              <button class="btn btn-danger float-right" id ="cancel">cancel</button>
+           </div>
+           
+            
+            </div>
+            
+        </div>
+        </form>
+    </div>
+
+
+</body>
+</html>
+<div>
+  <app-cmpts></app-cmpts> 
+</div>
